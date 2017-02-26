@@ -52,7 +52,7 @@ Install the Python dependencies using pip:
 (pyenv-opencv) ...$ pip install -r requirements.txt
 ```
 
-Create symlinks so that OpencV is accessible to the Python virtual environment:
+Create symlinks so that OpenCV is accessible to the Python virtual environment:
 
 ```bash
 # This is the site packages directory for our Python virtual environment
