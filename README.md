@@ -38,6 +38,9 @@ pyenv virtualenv 2.7.13 pyenv-opencv
 Clone this repository to your computer and navigate to the directory where `pyenv-opencv` is located. The command prompt should change to look something like this:
 
 ```
+# Update this to the path where pyenv-opencv is located on your computer
+cd <path to pyenv-opencv>
+
 (pyenv-opencv) ...$
 ```
 
@@ -49,10 +52,13 @@ Install the Python dependencies using pip:
 (pyenv-opencv) ...$ pip install -r requirements.txt
 ```
 
-Create symlinks so that OpencV is accessible to the Python virtual environment, pyenv-opencv:
+Create symlinks so that OpencV is accessible to the Python virtual environment:
 
 ```bash
+# This is the site packages directory for our Python virtual environment
 cd ~/.pyenv/versions/pyenv-opencv/lib/python2.7/site-packages
+
+# Symlink files needed from the OpenCV Homebrew installation
 ln -s /usr/local/Cellar/opencv/2.4.13.2/lib/python2.7/site-packages/cv.py cv.py
 ln -s /usr/local/Cellar/opencv/2.4.13.2/lib/python2.7/site-packages/cv2.so cv2.so
 ```
